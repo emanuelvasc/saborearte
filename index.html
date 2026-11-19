@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor & Arte - Restaurante e Gastronomia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Sabor & Arte</h1>
+            <p>Restaurante e Gastronomia</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#video">Vídeo</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="carrossel-container">
+        <div class="carrossel">
+            <div class="slide ativo">
+                <!-- O "?v=1" força o navegador a atualizar a imagem -->
+                <img src="img/banner1.jpg?v=1" alt="Prato de massa artesanal">
+                <div class="slide-texto">
+                    <h2>Gastronomia com Sabor e Arte</h2>
+                    <p>Pratos especiais, ingredientes selecionados e uma experiência única.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/banner2.jpg" alt="Ambiente aconchegante">
+                <div class="slide-texto">
+                    <h2>Ambiente Aconchegante</h2>
+                    <p>Ideal para reunir a família e os amigos.</p>
+                </div>
+            </div>
+            <button class="btn-carrossel prev" onclick="mudarSlide(-1)">&#10094;</button>
+            <button class="btn-carrossel next" onclick="mudarSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="cards-informativos">
+        <div class="card-info">
+            <h3>Pratos Especiais</h3>
+            <p>Variedade e qualidade em cada detalhe.</p>
+        </div>
+        <div class="card-info">
+            <h3>Ingredientes Frescos</h3>
+            <p>Selecionados diariamente para você.</p>
+        </div>
+        <div class="card-info">
+            <h3>Ambiente Aconchegante</h3>
+            <p>Ideal para família e amigos.</p>
+        </div>
+    </section>
+
+    <section id="cardapio" class="secao-cardapio">
+        <h2>Nosso Cardápio</h2>
+        <p>Destaques da Casa</p>
+
+        <div class="interacao-container">
+            <button id="btnDestaque" onclick="mostrarDestaque()">Ver destaque do dia</button>
+            <p id="textoDestaque"></p>
+        </div>
+
+        <div class="grid-cardapio">
+            <div class="card-prato">
+                <img src="img/prato1.jpg" alt="Picanha Grelhada">
+                <h3>Picanha Grelhada</h3>
+                <p>Com acompanhamentos.</p>
+                <span class="preco">R$ 89,90</span>
+            </div>
+            <div class="card-prato">
+                <img src="img/prato2.jpg" alt="Penne ao Molho Especial">
+                <h3>Penne ao Molho Especial</h3>
+                <p>Com camarões.</p>
+                <span class="preco">R$ 49,90</span>
+            </div>
+            <div class="card-prato">
+                <img src="img/prato3.jpg" alt="Petit Gateau">
+                <h3>Petit Gateau</h3>
+                <p>Com sorvete de creme.</p>
+                <span class="preco">R$ 29,90</span>
+            </div>
+            <div class="card-prato">
+                <img src="img/prato4.jpg" alt="Suco Natural">
+                <h3>Suco Natural</h3>
+                <p>Diversos sabores.</p>
+                <span class="preco">R$ 12,90</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="secao-sobre">
+        <div class="sobre-texto">
+            <h2>Conheça a Sabor & Arte</h2>
+            <p>Uma família que administra um restaurante artesanal com muito amor e dedicação. Nossa história começou há 20 anos, sempre priorizando o sabor caseiro e o atendimento acolhedor.</p>
+        </div>
+        <img src="img/sobre.jpg" alt="Interior do restaurante">
+    </section>
+
+    <section id="video" class="secao-video">
+        <h2>Assista ao Nosso Vídeo</h2>
+        <div class="video-container">
+            <!-- Substitua o link do src pelo seu vídeo do YouTube -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XvHqDJftDO4?si=xy8aNAiMwEsI42j1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="contato" class="secao-contato">
+        <h2>Contato</h2>
+        <p><strong>Cidade:</strong> São Paulo - SP</p>
+        <p><strong>Horário:</strong> Terça a Domingo, das 12h às 23h.</p>
+        <p><strong>E-mail:</strong> <a href="mailto:contato@saborearte.com.br">contato@saborearte.com.br</a></p>
+    </section>
+
+    <footer>
+        <div class="footer-conteudo">
+            <h2>Sabor & Arte</h2>
+            <p>&copy; 2026 Sabor & Arte. Todos os direitos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#video">Vídeo</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
